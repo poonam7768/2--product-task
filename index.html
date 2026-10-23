@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Task</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+     integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body class="bg-secondary">
+    <h2 class="bg-dark text-center text-white">Product Details Form!!!</h2>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card mt-4">
+                    <div class="card-header bg-dark text-white">
+                        <h3>Form..!</h3>
+                    </div>
+                    <div class="card-body">
+                        <form id="vform">
+                            <div class="form-group">
+                                <label for="vname">Enter Name:</label>
+                                <input required type="text" id="vname" class="form-control">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="vprice">Enter Price:</label>
+                                <input required type="text" id="vprice" class="form-control">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="vbrand">Enter Brand:</label>
+                                <input required type="text" id="vbrand" class="form-control">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="vyear">Enter ModelYear:</label>
+                                <input required type="text" id="vyear" class="form-control">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="vehicleType">Enter vehicleType:</label>
+                                <input required type="text" id="vehicleType" class="form-control">
+                            </div>
+
+                                <button type="submit" id="addbtn" class="btn btn-sm btn-secondary">Add</button>
+                                <button type="button" id="updatebtn" class="btn btn-sm btn-secondary d-none">Update</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <table class="table table-bordered text-center mt-4 bg-white">
+                    <thead>
+                        <tr>
+                            <th>Sr.No.</th>
+                            <th> Name</th>
+                            <th> price</th>
+                            <th> Brand</th>
+                            <th> Year</th>
+                            <th> Type</th>
+                            <th> Edit</th>
+                            <th> Delete</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="vcontainer">
+                        <!-- <tr>
+                            <td>1</td>
+                            <td>Swift</td>
+                            <td>750000</td>
+                            <td>Maruti Suzuki</td>
+                            <td>2025</td>
+                            <td>car</td>
+                            <td><button class="btn">Edit</button></td>
+                            <td><button class="btn">Delete</button></td>
+                        </tr> -->
+                    </tbody>
+                  </table>
+            </div>
+        </div>
+    </div>
+<div class="spinner d-none" id="spinner">
+    <div class="spinner-border" role="status">
+      <span class="sr-only">Loading...</span>
+   </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./app.js"></script>
+</body>
+</html>
